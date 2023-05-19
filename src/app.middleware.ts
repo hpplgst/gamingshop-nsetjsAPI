@@ -4,7 +4,7 @@ import helmet from 'helmet'
 
 export const middleWare = (app: any) => {
 
-    //?pipe 
+    //? validation
     app.useGlobalPipes(new ValidationPipe())
 
     //? swagger
@@ -17,7 +17,7 @@ export const middleWare = (app: any) => {
     const document = SwaggerModule.createDocument(app, config)
     SwaggerModule.setup('docs', app, document)
 
-
+    //? helmet
     app.use(helmet())
 
 
