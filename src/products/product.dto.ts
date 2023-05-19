@@ -4,7 +4,7 @@ export class AddProductDto {
     @IsIn(["MouseAndKeyboard", "Cpu", "Gpu", "MotherBoard", "Case"])
     group: any
 
-    @IsNotEmpty()
+    @IsString()
     title: string
 
     
@@ -12,10 +12,10 @@ export class AddProductDto {
 
     description?: string
 
-    @IsNotEmpty()
+    @IsInt()
     price: number
 
-    @IsNotEmpty()
+    @IsInt()
     count: number
 }
 
@@ -23,14 +23,14 @@ export class UppdateProductDto {
     @IsIn(["MouseAndKeyboard", "Cpu", "Gpu", "MotherBoard", "Case"])
     group: any
 
-    @IsNotEmpty()
+    @IsString()
     title: string
 
     description?: string
 
-    @IsNotEmpty()
+    @IsInt()
     price: number
 
-    @IsNotEmpty()
+    @IsInt()
     count: number
 }
