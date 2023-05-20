@@ -1,7 +1,7 @@
 import { IsString, IsIn, IsInt, IsNotEmpty, isNotEmpty } from 'class-validator'
 
 export class AddProductDto {
-    @IsIn(["MouseAndKeyboard", "Cpu", "Gpu", "MotherBoard", "Case"])
+    @IsIn(["MouseAndKeyboard", "Cpu", "Gpu", "MotherBoard", "Case","Game","Controller"])
     group: any
 
     @IsString()
@@ -20,7 +20,7 @@ export class AddProductDto {
 }
 
 export class UppdateProductDto {
-    @IsIn(["MouseAndKeyboard", "Cpu", "Gpu", "MotherBoard", "Case"])
+    @IsIn(["MouseAndKeyboard", "Cpu", "Gpu", "MotherBoard", "Case","Game","Controller"])
     group: any
 
     @IsString()
