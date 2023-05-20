@@ -17,7 +17,9 @@ enum Group {
   Cpu
   Gpu
   MotherBoard
-  Case
+  Case,
+  Game,
+  Controller
 }
 
 model User {
